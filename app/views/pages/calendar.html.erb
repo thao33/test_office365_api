@@ -1,0 +1,13 @@
+ <div>
+    <%= link_to 'Get Calendar', get_calendar_path %>
+ </div>
+
+ <div>
+    <%= link_to 'Get Calendar Events', get_calendar_events_path %>
+ </div>
+ <div>
+    <%= button_to 'Create First Event', create_event_path, method: :post %>
+ </div>
+  <div>
+    <%= button_to 'Delete First Event', delete_event_path, method: :delete %>
+ </div>

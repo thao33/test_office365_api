@@ -1,0 +1,13 @@
+Response class:
+<%= @calendar.class %>
+</br>
+Response body:
+<p>Calendar</p>
+<% calendar = JSON.parse(@calendar.body)["value"] %>
+<%= calendar %>
+<p>First event:</p>
+<%= calendar[0] %>
+</br>
+<p>First event's ID:</p>
+<%= calendar[0]["id"] %>
+</br>

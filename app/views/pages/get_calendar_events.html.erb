@@ -1,0 +1,38 @@
+Response class:
+<%= @events.class %>
+</br>
+Response body:
+<p>First's event ID</p>
+<% first_event = JSON.parse(@events.body)["value"][0] %>
+<%= first_event["id"] %>
+<p>First's event createdDateTime</p>
+<%= first_event["createdDateTime"] %>
+</br>
+<p>First's event reminderMinutesBeforeStart</p>
+<%= first_event["reminderMinutesBeforeStart"] %>
+</br>
+<p>First's event isReminderOn</p>
+<%= first_event["isReminderOn"] %>
+</br>
+<p>First's event subject</p>
+<%= first_event["subject"] %>
+</br>
+<p>First's event body content</p>
+<%= first_event["body"]["content"] %>
+</br>
+<p>First's event location</p>
+<%= first_event["location"]["displayName"] %>
+</br>
+<p>First's event attendees</p>
+<%= first_event["attendees"][0]["emailAddress"] %>
+</br>
+<p>First's event start</p>
+<%= first_event["start"] %>
+</br>
+<p>First's event end</p>
+<%= first_event["end"] %>
+</br>
+<p>First's event webLink</p>
+<%= first_event["webLink"] %>
+</br>
+</br>
